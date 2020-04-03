@@ -1,0 +1,217 @@
+/*********** General CSS ***********/
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.25;
+}
+
+.container {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.success {
+    color: green;
+}
+
+.delete {
+    color: red;
+}
+
+.update {
+    color: rgb(16, 0, 233)
+}
+
+
+
+
+
+
+/*********** Navbar ***********/
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #4d4d4d;
+    position: relative;
+}
+
+.nav .nav-header {
+    display: inline;
+}
+
+.nav .nav-header>.nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav .nav-links a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+}
+
+.nav .nav-links a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/*********** Login Form ***********/
+.login {
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 100px auto;
+}
+
+.login h1 {
+    text-align: center;
+    color: #5b6574;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #dee0e4;
+}
+
+.login form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.login form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #3274d6;
+    color: #ffffff;
+}
+
+.login form input[type="password"],
+.login form input[type="text"] {
+    width: 310px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.login form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #3274d6;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+}
+
+.login form input[type="submit"]:hover {
+    background-color: #2868c7;
+    transition: background-color 0.2s;
+}
+
+
+/*********** Record Table ***********/
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+table th,
+table td {
+    padding: .625em;
+    text-align: center;
+}
+
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+
+/*********** Record Insertion Form ***********/
+#insert-employee {
+    max-width: 300px;
+    margin: 50px auto 0;
+}
+
+#insert-employee input,
+textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    margin: 8px 0;
+    text-indent: 1em;
+    padding: 10px 0;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+}
+
+#insert-employee input[type="submit"] {
+    background-color: #4d90fe;
+    color: white;
+    border: 1px solid #3079ed;
+}
+
+#insert-employee input[type="submit"]:hover {
+    background-color: #4d9aff;
+    color: white;
+}
+
+
+/*********** Search Box ***********/
+.search {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 500px;
+    align-items: center;
+}
+
+form.search-box input[type=text] {
+    width: 50%;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    background: #f1f1f1;
+}
+
+form.search-box input[type=submit] {
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
